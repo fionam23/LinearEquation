@@ -1,0 +1,42 @@
+LinearEquation class Design
+
+Instance Variables:
+    private int x1;
+    private int y1;
+    private int x2;
+    private int y2;
+    private double slope;
+    private double intercept;
+    private double distanceOfPoints;
+
+     Helper Methods:
+     public double roundNumber( double number){
+     return roundedNumber
+     }
+    / This rounds the distance between points to the hundredths place/
+
+    private int getX(String coordinate){
+    //returns X coordinate out of the String coordinate format//
+    }
+    private int getY(coordinate){
+    //returns Y coordinate out of the String coordinate format//
+    }
+
+Constructor
+    public LinearEquation(String firstCoordinate, String secondCoordinate){
+    slope = (x2-x1)/(y2-y1)
+    intercept = (y1-slope*x1)
+    distanceOfPoints = Math.sqrt(Math.pow(x2-x1,2)+ Math.pow(y2-y1, 2));
+
+    end}
+
+Methods
+    public string toString(){
+    //this will return all the calculations in one long string, seperated by semicolons so i can print them in runner class//
+    }
+
+    public double solveForY(){
+    //this method gets the Y value from a created linear equation given an x value.//
+    }
+
+

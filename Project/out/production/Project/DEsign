@@ -1,0 +1,151 @@
+Requirements:
+import java.util.Scanner; (Scanner Class)
+
+
+"LinearEquation" object that calculates all the information of the line intersecting the 2 coordinate points
+Object accepts x and y values of two given coordinates
+Object should calculate and return the distance between the points (rounded to the nearest hundredth)
+Object should calculate and return the slope and y-intercept of the linear equation (in slope intercept form)
+if slope(m) is a decimal it will be converted to a FRACTION
+simplifying the fraction is not necessary
+y intercept(b) should be written as a DECIMAL
+
+
+The object does not need to calculate if the points make a vertical line and the slope is undefined.
+
+
+public String toString(); (this method you will create will handle making the information into a printable string)
+toString() method that allows the runner class to print the info in the "LinearEquation" object as a string
+
+
+should take the x and y values (they will be double) and format them like (x, y) as a string
+
+
+
+
+-----------------------------------------------------------
+
+
+RUNNER CLASS LinearEquationProgram.java
+##This Class will handle taking the coordinates the user gives, executing the required methods and printing the solution to the user##
+public static main Class{{ -- MAIN CLASS
+
+
+
+
+##Scanner class will be imported here##
+import java.util.Scanner; (Scanner Class)
+
+
+VARIABLES :
+Scanner s = new Scanner();
+
+
+
+
+
+
+String givenCoordinate1;
+String givenCoordinate2;
+
+
+
+
+EXECUTE:
+##Prompt User for coordinate 1 in format (x,y)##
+givenCoordinate1 = s.newLine(System.in);
+##Prompt User for coordinate 2 in format (x,y)##
+givenCoordinate2 = s.newLine(System.in);
+
+
+println("First Pair: "+givenCoordinate1)
+println("Second Pair: "+givenCoordinate2)
+
+
+}} --MAIN CLASS END
+
+
+
+
+
+
+
+
+-----------------------------------------------------------
+
+
+LinearEquation.java class
+##This class will hold constructors and the LinearEquation object##
+
+
+double x1;
+double y1;
+--x1 and y1 are COORDINATE1--
+
+
+double x2;
+double y2;
+--x2 and y2 are COORDINATE2--
+
+Create a new private function that seperates the String parameters and returning only the numbers as doubles.
+private double getX(String a){}
+private double getY(String a){}
+
+
+
+
+
+
+public class LinearEquation{
+
+
+=-Add private variables here-=
+
+
+private y; -- (y,x)
+
+private x; -- (y,x)
+
+private slope;  -- Slope
+
+private intercept; -- y-intercept
+
+private slopeInterceptEquation = y = mx+b
+
+
+
+
+public getSlope(x1, y1, x2, y2)
+    --When x = 0 that will be the y intercept--
+
+    slope =  (x2-x1)/(y2-y1)
+
+    return slope;
+
+    }
+
+
+Public getIntercept(x, y, slope)
+
+
+    intercept = y-(slope*x)
+
+    return intercept;
+    }
+
+ public getDistance(){
+    --note: I have to find out the largest
+
+
+    double Distance = sqrt(math.pow((x2-x1), 2) + math.pow((x2-x1), 2))
+
+ }
+
+
+public getEquation()
+
+    String cool = "y ="+getSlope()+"x + "+intercept"";
+} --LinearEquation CLASS END
+
+
+
